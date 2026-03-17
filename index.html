@@ -16,7 +16,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -113,192 +113,29 @@
           </div>
         </div>
 
-        <!-- Right column — AI animation -->
+        <!-- Right column — caso de éxito flotante -->
         <div class="hero-right fade-in" style="transition-delay: 0.4s;">
-          <div class="ai-visual">
-
-            <!-- Floating stat badges (hidden on small screens via .ai-badges-row) -->
-            <div class="stat-badge badge-1" aria-hidden="true">
-              <span class="metric-num">10+</span>
-              <span class="badge-label" data-es="años" data-en="years">años</span>
+          <div class="hero__card">
+            <div class="hero__card-tag">
+              <span class="badge badge--cobalt"
+                    data-es="Distribución" data-en="Distribution">Distribución</span>
+              <span class="badge badge--cobalt"
+                    data-es="Puebla" data-en="Puebla">Puebla</span>
             </div>
-            <div class="stat-badge badge-2" aria-hidden="true">
-              <span class="metric-num">30+</span>
-              <span class="badge-label" data-es="proyectos" data-en="projects">proyectos</span>
+            <p class="hero__card-problem"
+               data-es="Dos empleados capturando facturas. Todo el día."
+               data-en="Two employees entering invoices. All day long.">
+              Dos empleados capturando facturas. Todo el día.
+            </p>
+            <div class="hero__card-metric">
+              <span class="hero__card-number">40%</span>
+              <span class="hero__card-label"
+                    data-es="menos tiempo administrativo"
+                    data-en="less administrative time">
+                menos tiempo administrativo
+              </span>
             </div>
-            <div class="stat-badge badge-3" aria-hidden="true">
-              <span class="metric-num">100%</span>
-              <span class="badge-label" data-es="PyMEs" data-en="SMBs">PyMEs</span>
-            </div>
-
-            <div class="ai-visual-card">
-              <!-- Talavera corner brackets -->
-              <span class="talavera-corner-tr" aria-hidden="true"></span>
-              <span class="talavera-corner-bl" aria-hidden="true"></span>
-
-              <!-- ══ Neural network animation ══
-                   Layers:
-                   L1 (input)  x=55 : A(55,72) B(55,145) C(55,218)
-                   L2 (hidden) x=200: D(200,48) E(200,118) F(200,188) G(200,252)
-                   L3 (output) x=345: H(345,90) I(345,150) J(345,210)
-              -->
-              <svg class="ai-neural" viewBox="0 0 400 292"
-                   xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-
-                <!-- ── All L1 → L2 connections ── -->
-                <g stroke="#c2d4ec" stroke-width="1" fill="none">
-                  <line x1="55"  y1="72"  x2="200" y2="48"/>
-                  <line x1="55"  y1="72"  x2="200" y2="118"/>
-                  <line x1="55"  y1="72"  x2="200" y2="188"/>
-                  <line x1="55"  y1="72"  x2="200" y2="252"/>
-                  <line x1="55"  y1="145" x2="200" y2="48"/>
-                  <line x1="55"  y1="145" x2="200" y2="118"/>
-                  <line x1="55"  y1="145" x2="200" y2="188"/>
-                  <line x1="55"  y1="145" x2="200" y2="252"/>
-                  <line x1="55"  y1="218" x2="200" y2="48"/>
-                  <line x1="55"  y1="218" x2="200" y2="118"/>
-                  <line x1="55"  y1="218" x2="200" y2="188"/>
-                  <line x1="55"  y1="218" x2="200" y2="252"/>
-                </g>
-
-                <!-- ── All L2 → L3 connections ── -->
-                <g stroke="#c2d4ec" stroke-width="1" fill="none">
-                  <line x1="200" y1="48"  x2="345" y2="90"/>
-                  <line x1="200" y1="48"  x2="345" y2="150"/>
-                  <line x1="200" y1="48"  x2="345" y2="210"/>
-                  <line x1="200" y1="118" x2="345" y2="90"/>
-                  <line x1="200" y1="118" x2="345" y2="150"/>
-                  <line x1="200" y1="118" x2="345" y2="210"/>
-                  <line x1="200" y1="188" x2="345" y2="90"/>
-                  <line x1="200" y1="188" x2="345" y2="150"/>
-                  <line x1="200" y1="188" x2="345" y2="210"/>
-                  <line x1="200" y1="252" x2="345" y2="90"/>
-                  <line x1="200" y1="252" x2="345" y2="150"/>
-                  <line x1="200" y1="252" x2="345" y2="210"/>
-                </g>
-
-                <!-- ── Animated data flow dots (L1 → L2) ── -->
-                <circle r="3.5" fill="#1a3a7c" opacity="0">
-                  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.92;1" dur="1.9s" repeatCount="indefinite" begin="0s"/>
-                  <animateMotion dur="1.9s" repeatCount="indefinite" begin="0s" path="M55,72 L200,118"/>
-                </circle>
-                <circle r="3.5" fill="#1a3a7c" opacity="0">
-                  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.92;1" dur="2.2s" repeatCount="indefinite" begin="0.7s"/>
-                  <animateMotion dur="2.2s" repeatCount="indefinite" begin="0.7s" path="M55,145 L200,48"/>
-                </circle>
-                <circle r="3.5" fill="#1a3a7c" opacity="0">
-                  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.92;1" dur="1.7s" repeatCount="indefinite" begin="1.3s"/>
-                  <animateMotion dur="1.7s" repeatCount="indefinite" begin="1.3s" path="M55,145 L200,188"/>
-                </circle>
-                <circle r="3.5" fill="#1a3a7c" opacity="0">
-                  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.92;1" dur="2.0s" repeatCount="indefinite" begin="0.4s"/>
-                  <animateMotion dur="2.0s" repeatCount="indefinite" begin="0.4s" path="M55,218 L200,252"/>
-                </circle>
-                <circle r="3.5" fill="#1a3a7c" opacity="0">
-                  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.92;1" dur="1.6s" repeatCount="indefinite" begin="1.8s"/>
-                  <animateMotion dur="1.6s" repeatCount="indefinite" begin="1.8s" path="M55,218 L200,118"/>
-                </circle>
-
-                <!-- ── Animated data flow dots (L2 → L3) ── -->
-                <circle r="3.5" fill="#6b9fd4" opacity="0">
-                  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.92;1" dur="1.8s" repeatCount="indefinite" begin="0.3s"/>
-                  <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.3s" path="M200,48 L345,90"/>
-                </circle>
-                <circle r="3.5" fill="#6b9fd4" opacity="0">
-                  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.92;1" dur="2.1s" repeatCount="indefinite" begin="1.0s"/>
-                  <animateMotion dur="2.1s" repeatCount="indefinite" begin="1.0s" path="M200,118 L345,150"/>
-                </circle>
-                <circle r="3.5" fill="#6b9fd4" opacity="0">
-                  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.92;1" dur="1.7s" repeatCount="indefinite" begin="0.6s"/>
-                  <animateMotion dur="1.7s" repeatCount="indefinite" begin="0.6s" path="M200,188 L345,150"/>
-                </circle>
-                <circle r="3.5" fill="#6b9fd4" opacity="0">
-                  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.92;1" dur="2.3s" repeatCount="indefinite" begin="1.5s"/>
-                  <animateMotion dur="2.3s" repeatCount="indefinite" begin="1.5s" path="M200,252 L345,210"/>
-                </circle>
-                <circle r="3.5" fill="#6b9fd4" opacity="0">
-                  <animate attributeName="opacity" values="0;0.9;0.9;0" keyTimes="0;0.08;0.92;1" dur="1.9s" repeatCount="indefinite" begin="2.1s"/>
-                  <animateMotion dur="1.9s" repeatCount="indefinite" begin="2.1s" path="M200,252 L345,150"/>
-                </circle>
-
-                <!-- ── Glow behind output node ── -->
-                <circle cx="345" cy="150" r="22" fill="#1a3a7c" opacity="0.08">
-                  <animate attributeName="r"       values="18;26;18" dur="3s" repeatCount="indefinite"/>
-                  <animate attributeName="opacity" values="0.06;0.14;0.06" dur="3s" repeatCount="indefinite"/>
-                </circle>
-
-                <!-- ── L1 Nodes ── -->
-                <circle cx="55" cy="72"  r="8" fill="#dce8f5" stroke="#1a3a7c" stroke-width="2">
-                  <animate attributeName="r" values="8;10;8" dur="3.2s" repeatCount="indefinite" begin="0s"/>
-                </circle>
-                <circle cx="55" cy="145" r="10" fill="#1a3a7c" stroke="#1a3a7c" stroke-width="2">
-                  <animate attributeName="r" values="10;13;10" dur="2.8s" repeatCount="indefinite" begin="0.6s"/>
-                </circle>
-                <circle cx="55" cy="145" r="3.5" fill="white" pointer-events="none"/>
-                <circle cx="55" cy="218" r="8" fill="#dce8f5" stroke="#1a3a7c" stroke-width="2">
-                  <animate attributeName="r" values="8;10;8" dur="3.6s" repeatCount="indefinite" begin="1.1s"/>
-                </circle>
-
-                <!-- ── L2 Nodes ── -->
-                <circle cx="200" cy="48"  r="8" fill="#dce8f5" stroke="#1a3a7c" stroke-width="2">
-                  <animate attributeName="r" values="8;10;8" dur="3.0s" repeatCount="indefinite" begin="0.8s"/>
-                </circle>
-                <circle cx="200" cy="118" r="10" fill="#1a3a7c" stroke="#1a3a7c" stroke-width="2">
-                  <animate attributeName="r" values="10;13;10" dur="3.3s" repeatCount="indefinite" begin="0.2s"/>
-                </circle>
-                <circle cx="200" cy="118" r="3.5" fill="white" pointer-events="none"/>
-                <circle cx="200" cy="188" r="8" fill="#dce8f5" stroke="#1a3a7c" stroke-width="2">
-                  <animate attributeName="r" values="8;10;8" dur="2.7s" repeatCount="indefinite" begin="1.4s"/>
-                </circle>
-                <circle cx="200" cy="252" r="8" fill="#dce8f5" stroke="#1a3a7c" stroke-width="2">
-                  <animate attributeName="r" values="8;10;8" dur="3.4s" repeatCount="indefinite" begin="0.5s"/>
-                </circle>
-
-                <!-- ── L3 Nodes ── -->
-                <circle cx="345" cy="90"  r="8" fill="#dce8f5" stroke="#1a3a7c" stroke-width="2">
-                  <animate attributeName="r" values="8;10;8" dur="3.1s" repeatCount="indefinite" begin="1.2s"/>
-                </circle>
-                <circle cx="345" cy="150" r="12" fill="#1a3a7c" stroke="#1a3a7c" stroke-width="2">
-                  <animate attributeName="r" values="12;15;12" dur="2.6s" repeatCount="indefinite" begin="0.4s"/>
-                </circle>
-                <circle cx="345" cy="150" r="4.5" fill="white" pointer-events="none"/>
-                <circle cx="345" cy="210" r="8" fill="#dce8f5" stroke="#1a3a7c" stroke-width="2">
-                  <animate attributeName="r" values="8;10;8" dur="3.5s" repeatCount="indefinite" begin="0.9s"/>
-                </circle>
-
-                <!-- ── Layer labels ── -->
-                <text x="55"  y="278" text-anchor="middle"
-                      font-family="DM Sans, sans-serif" font-size="10.5" fill="#4a6080">Datos</text>
-                <text x="200" y="278" text-anchor="middle"
-                      font-family="DM Sans, sans-serif" font-size="10.5" fill="#4a6080">Modelo IA</text>
-                <text x="345" y="278" text-anchor="middle"
-                      font-family="DM Sans, sans-serif" font-size="10.5" fill="#1a3a7c" font-weight="600">Resultado</text>
-              </svg>
-
-              <p class="ai-visual-label"
-                 data-es="Procesamiento inteligente de datos en tiempo real"
-                 data-en="Intelligent real-time data processing">
-                Procesamiento inteligente de datos en tiempo real
-              </p>
-            </div><!-- /.ai-visual-card -->
-
-            <!-- Mobile fallback: inline stat row -->
-            <div class="ai-badges-row" aria-hidden="true">
-              <div class="stat-badge" style="position:static;transform:none;">
-                <span class="metric-num">10+</span>
-                <span class="badge-label" data-es="años" data-en="years">años</span>
-              </div>
-              <div class="stat-badge" style="position:static;transform:none;">
-                <span class="metric-num">30+</span>
-                <span class="badge-label" data-es="proyectos" data-en="projects">proyectos</span>
-              </div>
-              <div class="stat-badge" style="position:static;transform:none;">
-                <span class="metric-num">100%</span>
-                <span class="badge-label" data-es="PyMEs" data-en="SMBs">PyMEs</span>
-              </div>
-            </div>
-
-          </div><!-- /.ai-visual -->
+          </div>
         </div>
 
       </div>
@@ -389,6 +226,11 @@
       </div>
     </section>
 
+    <div class="divider-talavera" aria-hidden="true">
+      <div class="divider-talavera__line"></div>
+      <div class="divider-talavera__diamond"></div>
+      <div class="divider-talavera__line"></div>
+    </div>
 
     <!-- ═══════════════════════════════════════════
          SECTION 03 — SERVICES
@@ -556,6 +398,11 @@
       </div>
     </section>
 
+    <div class="divider-talavera" aria-hidden="true">
+      <div class="divider-talavera__line"></div>
+      <div class="divider-talavera__diamond"></div>
+      <div class="divider-talavera__line"></div>
+    </div>
 
     <!-- ═══════════════════════════════════════════
          SECTION 04 — CASE STUDIES
@@ -579,91 +426,120 @@
 
         <div class="cases-grid">
 
-          <!-- Case 1 -->
+          <!-- Case 1 — Distribución -->
           <article class="case-card fade-in">
-            <span class="tag" data-es="Distribución · Puebla" data-en="Distribution · Puebla">
-              Distribución · Puebla
-            </span>
-            <h3 data-es="Dos empleados dedicados a capturar facturas. Todo el día. Todos los días."
-                data-en="Two employees doing nothing but entering invoices. All day. Every day.">
-              Dos empleados dedicados a capturar facturas. Todo el día. Todos los días.
-            </h3>
-            <p data-es="Distribuidora familiar con 15 años en el mercado poblano. Automatizamos su facturación con lectura inteligente de documentos e integración directa con CONTPAQi. Hoy el equipo solo revisa lo que el sistema no pudo resolver solo."
-               data-en="Family distributor with 15 years in the Puebla market. We automated their invoicing with intelligent document reading and direct CONTPAQi integration. Today the team only reviews what the system couldn't handle on its own.">
-              Distribuidora familiar con 15 años en el mercado poblano. Automatizamos su facturación con lectura inteligente de documentos e integración directa con CONTPAQi. Hoy el equipo solo revisa lo que el sistema no pudo resolver solo.
-            </p>
-            <div>
-              <div class="case-metric">40%</div>
-              <div class="case-metric-label"
-                   data-es="menos tiempo administrativo — equivalente a recuperar un empleado de tiempo completo"
-                   data-en="less administrative time — equivalent to recovering one full-time employee">
-                menos tiempo administrativo — equivalente a recuperar un empleado de tiempo completo
+            <div class="case-card__accent" style="background: var(--color-cobalt);" aria-hidden="true"></div>
+            <div class="case-card__body">
+              <div class="case-card__tags">
+                <span class="badge badge--cobalt"
+                      data-es="Distribución" data-en="Distribution">Distribución</span>
+                <span class="badge badge--cobalt"
+                      data-es="Puebla" data-en="Puebla">Puebla</span>
               </div>
+              <p class="case-card__problem"
+                 data-es="Dos empleados dedicados a capturar facturas. Todo el día. Todos los días."
+                 data-en="Two employees doing nothing but entering invoices. All day. Every day.">
+                Dos empleados dedicados a capturar facturas. Todo el día. Todos los días.
+              </p>
+              <p class="case-card__solution"
+                 data-es="Distribuidora familiar con 15 años en el mercado poblano. Automatizamos su facturación con lectura inteligente de documentos e integración directa con CONTPAQi. Hoy el equipo solo revisa lo que el sistema no pudo resolver solo."
+                 data-en="Family distributor with 15 years in the Puebla market. We automated their invoicing with intelligent document reading and direct CONTPAQi integration. Today the team only reviews what the system couldn't handle on its own.">
+                Distribuidora familiar con 15 años en el mercado poblano. Automatizamos su facturación con lectura inteligente de documentos e integración directa con CONTPAQi. Hoy el equipo solo revisa lo que el sistema no pudo resolver solo.
+              </p>
+              <div class="case-card__metric">
+                <span class="case-card__number">40%</span>
+                <span class="case-card__metric-label"
+                      data-es="menos tiempo administrativo — equivalente a recuperar un empleado de tiempo completo"
+                      data-en="less administrative time — equivalent to recovering one full-time employee">
+                  menos tiempo administrativo — equivalente a recuperar un empleado de tiempo completo
+                </span>
+              </div>
+              <a href="casos.html#distribuidora-alimentos" class="case-link"
+                 data-es="Leer cómo lo hicimos →" data-en="Read how we did it →">
+                Leer cómo lo hicimos →
+              </a>
             </div>
-            <a href="casos.html#distribuidora-alimentos" class="case-link"
-               data-es="Leer cómo lo hicimos →" data-en="Read how we did it →">
-              Leer cómo lo hicimos →
-            </a>
           </article>
 
-          <!-- Case 2 -->
+          <!-- Case 2 — Restaurante -->
           <article class="case-card fade-in" style="transition-delay: 0.1s;">
-            <span class="tag" data-es="Restaurante · Puebla" data-en="Restaurant · Puebla">
-              Restaurante · Puebla
-            </span>
-            <h3 data-es="El teléfono sonaba sin parar. El personal no daba abasto entre mesas y reservaciones."
-                data-en="The phone rang nonstop. Staff couldn't keep up with tables and reservations at the same time.">
-              El teléfono sonaba sin parar. El personal no daba abasto entre mesas y reservaciones.
-            </h3>
-            <p data-es="Restaurante de cocina tradicional en el centro de Puebla. Pusimos un asistente de WhatsApp que atiende reservaciones, responde preguntas del menú y comunica promociones — sin que nadie tenga que contestar."
-               data-en="Traditional cuisine restaurant in downtown Puebla. We set up a WhatsApp assistant that handles reservations, answers menu questions and communicates promotions — without anyone having to pick up.">
-              Restaurante de cocina tradicional en el centro de Puebla. Pusimos un asistente de WhatsApp que atiende reservaciones, responde preguntas del menú y comunica promociones — sin que nadie tenga que contestar.
-            </p>
-            <div>
-              <div class="case-metric">70%</div>
-              <div class="case-metric-label"
-                   data-es="de reservas sin intervención humana"
-                   data-en="of reservations without human intervention">
-                de reservas sin intervención humana
+            <div class="case-card__accent" style="background: var(--color-terracotta);" aria-hidden="true"></div>
+            <div class="case-card__body">
+              <div class="case-card__tags">
+                <span class="badge badge--terra"
+                      data-es="Restaurante" data-en="Restaurant">Restaurante</span>
+                <span class="badge badge--terra"
+                      data-es="Puebla" data-en="Puebla">Puebla</span>
               </div>
+              <p class="case-card__problem"
+                 data-es="El teléfono sonaba sin parar. El personal no daba abasto entre mesas y reservaciones."
+                 data-en="The phone rang nonstop. Staff couldn't keep up with tables and reservations at the same time.">
+                El teléfono sonaba sin parar. El personal no daba abasto entre mesas y reservaciones.
+              </p>
+              <p class="case-card__solution"
+                 data-es="Restaurante de cocina tradicional en el centro de Puebla. Pusimos un asistente de WhatsApp que atiende reservaciones, responde preguntas del menú y comunica promociones — sin que nadie tenga que contestar."
+                 data-en="Traditional cuisine restaurant in downtown Puebla. We set up a WhatsApp assistant that handles reservations, answers menu questions and communicates promotions — without anyone having to pick up.">
+                Restaurante de cocina tradicional en el centro de Puebla. Pusimos un asistente de WhatsApp que atiende reservaciones, responde preguntas del menú y comunica promociones — sin que nadie tenga que contestar.
+              </p>
+              <div class="case-card__metric">
+                <span class="case-card__number">70%</span>
+                <span class="case-card__metric-label"
+                      data-es="de reservas sin intervención humana"
+                      data-en="of reservations without human intervention">
+                  de reservas sin intervención humana
+                </span>
+              </div>
+              <a href="casos.html#restaurante-puebla" class="case-link"
+                 data-es="Leer cómo lo hicimos →" data-en="Read how we did it →">
+                Leer cómo lo hicimos →
+              </a>
             </div>
-            <a href="casos.html#restaurante-puebla" class="case-link"
-               data-es="Leer cómo lo hicimos →" data-en="Read how we did it →">
-              Leer cómo lo hicimos →
-            </a>
           </article>
 
-          <!-- Case 3 -->
+          <!-- Case 3 — Manufactura -->
           <article class="case-card fade-in" style="transition-delay: 0.2s;">
-            <span class="tag" data-es="Manufactura · Puebla" data-en="Manufacturing · Puebla">
-              Manufactura · Puebla
-            </span>
-            <h3 data-es="Siempre con demasiado de lo que no se necesita y poco de lo que sí."
-                data-en="Always too much of what they didn't need and not enough of what they did.">
-              Siempre con demasiado de lo que no se necesita y poco de lo que sí.
-            </h3>
-            <p data-es="Taller metalmecánico poblano con más de 20 años de operación. Conectamos sus datos históricos de producción a un sistema que predice semana a semana qué materiales va a necesitar — y en qué cantidad."
-               data-en="Puebla metalworking workshop with over 20 years of operation. We connected their historical production data to a system that predicts week by week what materials they'll need — and how much.">
-              Taller metalmecánico poblano con más de 20 años de operación. Conectamos sus datos históricos de producción a un sistema que predice semana a semana qué materiales va a necesitar — y en qué cantidad.
-            </p>
-            <div>
-              <div class="case-metric">25%</div>
-              <div class="case-metric-label"
-                   data-es="menos inventario parado — capital que volvió a trabajar"
-                   data-en="less idle inventory — capital that went back to work">
-                menos inventario parado — capital que volvió a trabajar
+            <div class="case-card__accent" style="background: var(--color-amber);" aria-hidden="true"></div>
+            <div class="case-card__body">
+              <div class="case-card__tags">
+                <span class="badge badge--amber"
+                      data-es="Manufactura" data-en="Manufacturing">Manufactura</span>
+                <span class="badge badge--amber"
+                      data-es="Puebla" data-en="Puebla">Puebla</span>
               </div>
+              <p class="case-card__problem"
+                 data-es="Siempre con demasiado de lo que no se necesita y poco de lo que sí."
+                 data-en="Always too much of what they didn't need and not enough of what they did.">
+                Siempre con demasiado de lo que no se necesita y poco de lo que sí.
+              </p>
+              <p class="case-card__solution"
+                 data-es="Taller metalmecánico poblano con más de 20 años de operación. Conectamos sus datos históricos de producción a un sistema que predice semana a semana qué materiales va a necesitar — y en qué cantidad."
+                 data-en="Puebla metalworking workshop with over 20 years of operation. We connected their historical production data to a system that predicts week by week what materials they'll need — and how much.">
+                Taller metalmecánico poblano con más de 20 años de operación. Conectamos sus datos históricos de producción a un sistema que predice semana a semana qué materiales va a necesitar — y en qué cantidad.
+              </p>
+              <div class="case-card__metric">
+                <span class="case-card__number">25%</span>
+                <span class="case-card__metric-label"
+                      data-es="menos inventario parado — capital que volvió a trabajar"
+                      data-en="less idle inventory — capital that went back to work">
+                  menos inventario parado — capital que volvió a trabajar
+                </span>
+              </div>
+              <a href="casos.html#manufactura-puebla" class="case-link"
+                 data-es="Leer cómo lo hicimos →" data-en="Read how we did it →">
+                Leer cómo lo hicimos →
+              </a>
             </div>
-            <a href="casos.html#manufactura-puebla" class="case-link"
-               data-es="Leer cómo lo hicimos →" data-en="Read how we did it →">
-              Leer cómo lo hicimos →
-            </a>
           </article>
 
         </div>
       </div>
     </section>
 
+    <div class="divider-talavera" aria-hidden="true">
+      <div class="divider-talavera__line"></div>
+      <div class="divider-talavera__diamond"></div>
+      <div class="divider-talavera__line"></div>
+    </div>
 
     <!-- ═══════════════════════════════════════════
          SECTION 05 — PRICING
@@ -859,6 +735,11 @@
       </div>
     </section>
 
+    <div class="divider-talavera" aria-hidden="true">
+      <div class="divider-talavera__line"></div>
+      <div class="divider-talavera__diamond"></div>
+      <div class="divider-talavera__line"></div>
+    </div>
 
     <!-- ═══════════════════════════════════════════
          SECTION 06 — ABOUT
@@ -882,9 +763,9 @@
                   data-es="Quiénes somos" data-en="Who we are">
               Quiénes somos
             </span>
-            <h2 data-es="Experiencia Fortune 500 al servicio de las PyMEs de México"
-                data-en="Fortune 500 expertise serving México's SMBs">
-              Experiencia Fortune 500 al servicio de las PyMEs de México
+            <h2 data-es="Experiencia Fortune 500. De regreso en Puebla."
+                data-en="Fortune 500 expertise. Back home in Puebla.">
+              Experiencia Fortune 500. De regreso en Puebla.
             </h2>
           </div>
 
@@ -967,6 +848,11 @@
 
     </section>
 
+    <div class="divider-talavera" aria-hidden="true">
+      <div class="divider-talavera__line"></div>
+      <div class="divider-talavera__diamond"></div>
+      <div class="divider-talavera__line"></div>
+    </div>
 
     <!-- ═══════════════════════════════════════════
          SECTION 07 — CONTACT
