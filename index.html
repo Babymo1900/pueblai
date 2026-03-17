@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PueblAI — Inteligencia Artificial para PyMEs · Puebla, México</title>
+  <meta name="description" content="Soluciones de Inteligencia Artificial asequibles para pequeñas y medianas empresas en Puebla y México. Más de 10 años de experiencia en Amazon y Microsoft." />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="PueblAI — IA para PyMEs · Puebla, México" />
+  <meta property="og:description" content="Automatización, análisis de datos y chatbots para PyMEs. Experiencia Fortune 500 al servicio de tu negocio." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:locale"      content="es_MX" />
+  <!-- REPLACE: og:image with a 1200×630 social card image -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="site-nav" role="navigation" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="PueblAI — Inicio">
+        Puebl<span>AI</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a></li>
+        <li><a href="#casos"     data-es="Casos"     data-en="Cases">Casos</a></li>
+        <li><a href="#precios"   data-es="Precios"   data-en="Pricing">Precios</a></li>
+        <li><a href="#nosotros"  data-es="Nosotros"  data-en="About">Nosotros</a></li>
+        <li><a href="#contacto"  data-es="Contacto"  data-en="Contact">Contacto</a></li>
+      </ul>
+
+      <button id="lang-toggle" class="lang-toggle" aria-label="Cambiar idioma" aria-pressed="false">
+        ES | EN
+      </button>
+
+      <button class="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <button class="close-overlay" aria-label="Cerrar menú">&times;</button>
+    <a href="#servicios" data-es="Servicios"  data-en="Services">Servicios</a>
+    <a href="#casos"     data-es="Casos"      data-en="Cases">Casos</a>
+    <a href="#precios"   data-es="Precios"    data-en="Pricing">Precios</a>
+    <a href="#nosotros"  data-es="Nosotros"   data-en="About">Nosotros</a>
+    <a href="#contacto"  data-es="Contacto"   data-en="Contact">Contacto</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       WHATSAPP FLOAT BUTTON
+  ═══════════════════════════════════════════ -->
+  <a href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20me%20interesa%20una%20consulta%20gratuita%20de%20IA%20para%20mi%20negocio."
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp">
+    <!-- WhatsApp icon -->
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 01 — HERO
+    ═══════════════════════════════════════════ -->
+    <section id="hero" aria-label="Inicio" style="position: relative;">
+      <div class="hero-inner">
+
+        <!-- Left column -->
+        <div class="hero-left">
+          <span class="section-eyebrow fade-in" data-es="IA para PyMEs · Puebla, México" data-en="AI for SMBs · Puebla, México">
+            IA para PyMEs · Puebla, México
+          </span>
+
+          <h1 class="fade-in" style="transition-delay: 0.1s;">
+            <data-es data-es="Transforma tu negocio con" data-en="Transform your business with">
+              Transforma tu negocio con
+            </data-es>
+            <em data-es="Inteligencia Artificial asequible" data-en="affordable Artificial Intelligence">
+              Inteligencia Artificial asequible
+            </em>
+          </h1>
+
+          <p class="fade-in" style="transition-delay: 0.2s;"
+             data-es="Más de 10 años de experiencia en Amazon y Microsoft, ahora al servicio de las PyMEs de Puebla y México."
+             data-en="10+ years of experience at Amazon and Microsoft, now serving SMBs in Puebla and across México.">
+            Más de 10 años de experiencia en Amazon y Microsoft, ahora al servicio de las PyMEs de Puebla y México.
+          </p>
+
+          <div class="hero-ctas fade-in" style="transition-delay: 0.3s;">
+            <a href="#contacto" class="btn-primary"
+               data-es="Agendar consulta gratuita" data-en="Book a free consultation">
+              Agendar consulta gratuita
+            </a>
+            <a href="#casos" class="secondary-link"
+               data-es="Ver nuestros casos de éxito" data-en="See our success stories">
+              Ver nuestros casos de éxito
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column — stats cluster -->
+        <div class="hero-right fade-in" style="transition-delay: 0.4s;">
+          <div class="stats-cluster">
+            <div class="stat-card">
+              <span class="metric-num">10+</span>
+              <span class="stat-label" data-es="años en tech de clase mundial" data-en="years in world-class tech">
+                años en tech de clase mundial
+              </span>
+            </div>
+            <div class="stat-card">
+              <span class="metric-num">30+</span>
+              <span class="stat-label" data-es="proyectos entregados" data-en="projects delivered">
+                proyectos entregados
+              </span>
+            </div>
+            <div class="stat-card">
+              <span class="metric-num">100%</span>
+              <span class="stat-label" data-es="enfocados en PyMEs" data-en="focused on SMBs">
+                enfocados en PyMEs
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <svg viewBox="0 0 24 24" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 02 — TRUST SIGNALS
+    ═══════════════════════════════════════════ -->
+    <section id="credibilidad" aria-label="Credenciales y experiencia">
+      <div class="credibilidad-inner">
+
+        <!-- Col 1: Company logos -->
+        <div class="trust-col fade-in">
+          <span class="trust-col-title"
+                data-es="Experiencia comprobada en" data-en="Proven experience at">
+            Experiencia comprobada en
+          </span>
+          <div class="company-logos">
+            <!-- REPLACE: official Amazon & Microsoft grayscale SVG logos -->
+            <span class="company-logo-badge">amazon</span>
+            <span class="company-logo-badge">microsoft</span>
+          </div>
+          <p class="trust-caption"
+             data-es="Nuestro equipo fue parte de equipos de ingeniería e IA en empresas Fortune 500 durante más de una década."
+             data-en="Our team was part of engineering and AI teams at Fortune 500 companies for over a decade.">
+            Nuestro equipo fue parte de equipos de ingeniería e IA en empresas Fortune 500 durante más de una década.
+          </p>
+        </div>
+
+        <!-- Col 2: Key metrics -->
+        <div class="trust-col fade-in" style="transition-delay: 0.1s;">
+          <span class="trust-col-title"
+                data-es="Resultados que hablan" data-en="Numbers that speak">
+            Resultados que hablan
+          </span>
+          <div class="stat-row">
+            <div class="stat-item">
+              <span class="metric-num">10+</span>
+              <span class="stat-sub"
+                    data-es="años en tech de clase mundial" data-en="years in world-class tech">
+                años en tech de clase mundial
+              </span>
+            </div>
+            <div class="stat-item">
+              <span class="metric-num">30+</span>
+              <span class="stat-sub"
+                    data-es="proyectos entregados" data-en="projects delivered">
+                proyectos entregados
+              </span>
+            </div>
+            <div class="stat-item">
+              <span class="metric-num">100%</span>
+              <span class="stat-sub"
+                    data-es="enfocados en PyMEs" data-en="focused on SMBs">
+                enfocados en PyMEs
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 3: Pull quote / certifications -->
+        <div class="trust-col fade-in" style="transition-delay: 0.2s;">
+          <span class="trust-col-title"
+                data-es="Lo que dicen nuestros clientes" data-en="What our clients say">
+            Lo que dicen nuestros clientes
+          </span>
+          <!-- REPLACE: AWS Partner / Google Cloud badge or real client logo -->
+          <div class="cert-badges">
+            <span class="tag">AWS Cloud</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">Hecho en Puebla</span>
+          </div>
+          <blockquote class="pull-quote"
+                      data-es="&ldquo;En tres meses automatizamos lo que antes nos tomaba dos personas a tiempo completo.&rdquo; — Distribuidora local, Puebla"
+                      data-en="&ldquo;In three months we automated what used to take two full-time people.&rdquo; — Local distributor, Puebla">
+            &ldquo;En tres meses automatizamos lo que antes nos tomaba dos personas a tiempo completo.&rdquo; — Distribuidora local, Puebla
+          </blockquote>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 03 — SERVICES
+    ═══════════════════════════════════════════ -->
+    <section id="servicios" aria-label="Servicios de IA">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow"
+                data-es="Nuestras soluciones" data-en="Our solutions">
+            Nuestras soluciones
+          </span>
+          <h2 data-es="Soluciones de IA para tu negocio"
+              data-en="AI solutions for your business">
+            Soluciones de IA para tu negocio
+          </h2>
+          <p data-es="Tecnología de clase mundial, precios accesibles para PyMEs."
+             data-en="World-class technology, accessible pricing for SMBs.">
+            Tecnología de clase mundial, precios accesibles para PyMEs.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Card 1: Process automation -->
+          <article class="service-card fade-in">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <span class="tag" data-es="Manufactura · Retail · Contabilidad"
+                              data-en="Manufacturing · Retail · Accounting">
+              Manufactura · Retail · Contabilidad
+            </span>
+            <h3 data-es="Automatización de procesos"
+                data-en="Process automation">
+              Automatización de procesos
+            </h3>
+            <p data-es="Eliminamos tareas manuales repetitivas: captura de datos, validación de facturas, generación de reportes. Conectamos tus sistemas actuales sin reemplazarlos."
+               data-en="We eliminate repetitive manual tasks: data entry, invoice validation, report generation. We connect your existing systems without replacing them.">
+              Eliminamos tareas manuales repetitivas: captura de datos, validación de facturas, generación de reportes. Conectamos tus sistemas actuales sin reemplazarlos.
+            </p>
+            <span class="service-outcome"
+                  data-es="Hasta 60% menos tiempo en tareas operativas"
+                  data-en="Up to 60% less time on operational tasks">
+              Hasta 60% menos tiempo en tareas operativas
+            </span>
+            <a href="servicios.html#automatizacion" class="service-link"
+               data-es="Saber más →" data-en="Learn more →">
+              Saber más →
+            </a>
+          </article>
+
+          <!-- Card 2: Data analytics & predictive AI -->
+          <article class="service-card fade-in" style="transition-delay: 0.05s;">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <span class="tag" data-es="Restaurantes · Distribuidores · E-commerce"
+                              data-en="Restaurants · Distributors · E-commerce">
+              Restaurantes · Distribuidores · E-commerce
+            </span>
+            <h3 data-es="Análisis de datos e IA predictiva"
+                data-en="Data analytics &amp; predictive AI">
+              Análisis de datos e IA predictiva
+            </h3>
+            <p data-es="Convertimos los datos de tu negocio en decisiones inteligentes. Predecimos demanda, detectamos patrones de compra y optimizamos inventario con modelos de Machine Learning."
+               data-en="We turn your business data into smart decisions. We predict demand, detect purchasing patterns and optimize inventory with Machine Learning models.">
+              Convertimos los datos de tu negocio en decisiones inteligentes. Predecimos demanda, detectamos patrones de compra y optimizamos inventario con modelos de Machine Learning.
+            </p>
+            <span class="service-outcome"
+                  data-es="Hasta 30% menos inventario ocioso"
+                  data-en="Up to 30% less idle inventory">
+              Hasta 30% menos inventario ocioso
+            </span>
+            <a href="servicios.html#analitica" class="service-link"
+               data-es="Saber más →" data-en="Learn more →">
+              Saber más →
+            </a>
+          </article>
+
+          <!-- Card 3: Chatbots -->
+          <article class="service-card fade-in" style="transition-delay: 0.10s;">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <span class="tag" data-es="Cualquier PyME con consultas repetitivas"
+                              data-en="Any SMB with repetitive inquiries">
+              Cualquier PyME con consultas repetitivas
+            </span>
+            <h3 data-es="Chatbots y atención al cliente"
+                data-en="Chatbots &amp; customer service">
+              Chatbots y atención al cliente
+            </h3>
+            <p data-es="Asistentes virtuales para WhatsApp, web o Instagram que responden al instante, toman pedidos, hacen reservaciones y escalan casos complejos a tu equipo."
+               data-en="Virtual assistants for WhatsApp, web or Instagram that respond instantly, take orders, make reservations and escalate complex cases to your team.">
+              Asistentes virtuales para WhatsApp, web o Instagram que responden al instante, toman pedidos, hacen reservaciones y escalan casos complejos a tu equipo.
+            </p>
+            <span class="service-outcome"
+                  data-es="Hasta 70% de interacciones sin intervención humana"
+                  data-en="Up to 70% of interactions without human intervention">
+              Hasta 70% de interacciones sin intervención humana
+            </span>
+            <a href="servicios.html#chatbots" class="service-link"
+               data-es="Saber más →" data-en="Learn more →">
+              Saber más →
+            </a>
+          </article>
+
+          <!-- Card 4: Strategic consulting -->
+          <article class="service-card fade-in" style="transition-delay: 0.15s;">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <span class="tag" data-es="Dueños de negocio sin punto de partida"
+                              data-en="Business owners new to AI">
+              Dueños de negocio sin punto de partida
+            </span>
+            <h3 data-es="Consultoría estratégica de IA"
+                data-en="Strategic AI consulting">
+              Consultoría estratégica de IA
+            </h3>
+            <p data-es="No sabes por dónde empezar con la IA en tu empresa. Hacemos un diagnóstico de tus procesos, identificamos las oportunidades de mayor impacto y te entregamos una hoja de ruta clara."
+               data-en="Not sure where to start with AI in your business. We diagnose your processes, identify the highest-impact opportunities and deliver a clear roadmap.">
+              No sabes por dónde empezar con la IA en tu empresa. Hacemos un diagnóstico de tus procesos, identificamos las oportunidades de mayor impacto y te entregamos una hoja de ruta clara.
+            </p>
+            <span class="service-outcome"
+                  data-es="Hoja de ruta lista en 2 semanas"
+                  data-en="Roadmap ready in 2 weeks">
+              Hoja de ruta lista en 2 semanas
+            </span>
+            <a href="servicios.html#consultoria" class="service-link"
+               data-es="Saber más →" data-en="Learn more →">
+              Saber más →
+            </a>
+          </article>
+
+          <!-- Card 5: Integrations -->
+          <article class="service-card fade-in" style="transition-delay: 0.20s;">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M10 2h4v6h-4V2zM2 10h6v4H2v-4zM16 10h6v4h-6v-4zM10 16h4v6h-4v-6z"/><line x1="14" y1="5" x2="19" y2="10"/><line x1="5" y1="10" x2="10" y2="5"/><line x1="14" y1="19" x2="19" y2="14"/><line x1="5" y1="14" x2="10" y2="19"/></svg>
+            </div>
+            <span class="tag" data-es="CONTPAQi · Aspel · SAP · Shopify"
+                              data-en="CONTPAQi · Aspel · SAP · Shopify">
+              CONTPAQi · Aspel · SAP · Shopify
+            </span>
+            <h3 data-es="Integraciones y APIs"
+                data-en="Integrations &amp; APIs">
+              Integraciones y APIs
+            </h3>
+            <p data-es="Conectamos soluciones de IA con los sistemas que ya usas: CONTPAQi, Aspel, SAP, Shopify, MercadoLibre. Sin reemplazar lo que funciona, solo potenciándolo con inteligencia."
+               data-en="We connect AI solutions with the systems you already use: CONTPAQi, Aspel, SAP, Shopify, MercadoLibre. Without replacing what works, only enhancing it with intelligence.">
+              Conectamos soluciones de IA con los sistemas que ya usas: CONTPAQi, Aspel, SAP, Shopify, MercadoLibre. Sin reemplazar lo que funciona, solo potenciándolo con inteligencia.
+            </p>
+            <span class="service-outcome"
+                  data-es="Compatible con tu stack actual"
+                  data-en="Compatible with your current stack">
+              Compatible con tu stack actual
+            </span>
+            <a href="servicios.html#integraciones" class="service-link"
+               data-es="Saber más →" data-en="Learn more →">
+              Saber más →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 04 — CASE STUDIES
+    ═══════════════════════════════════════════ -->
+    <section id="casos" aria-label="Casos de éxito">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow"
+                data-es="Casos de éxito" data-en="Success stories">
+            Casos de éxito
+          </span>
+          <h2 data-es="Resultados reales para negocios reales"
+              data-en="Real results for real businesses">
+            Resultados reales para negocios reales
+          </h2>
+          <p data-es="PyMEs de Puebla y México que ya transformaron sus operaciones con IA."
+             data-en="SMBs in Puebla and México that have already transformed their operations with AI.">
+            PyMEs de Puebla y México que ya transformaron sus operaciones con IA.
+          </p>
+        </div>
+
+        <div class="cases-grid">
+
+          <!-- Case 1 -->
+          <article class="case-card fade-in">
+            <span class="tag" data-es="Distribución · Puebla" data-en="Distribution · Puebla">
+              Distribución · Puebla
+            </span>
+            <h3 data-es="Facturación manual que consumía 2 empleados a tiempo completo"
+                data-en="Manual invoicing that consumed 2 full-time employees">
+              Facturación manual que consumía 2 empleados a tiempo completo
+            </h3>
+            <p data-es="Distribuidora de alimentos automatizó su proceso de facturación con OCR e integración directa con CONTPAQi. El equipo ahora revisa excepciones en lugar de capturar datos."
+               data-en="Food distributor automated its invoicing process with OCR and direct integration with CONTPAQi. The team now reviews exceptions instead of entering data.">
+              Distribuidora de alimentos automatizó su proceso de facturación con OCR e integración directa con CONTPAQi. El equipo ahora revisa excepciones en lugar de capturar datos.
+            </p>
+            <div>
+              <div class="case-metric">40%</div>
+              <div class="case-metric-label"
+                   data-es="reducción en tiempo administrativo"
+                   data-en="reduction in administrative time">
+                reducción en tiempo administrativo
+              </div>
+            </div>
+            <a href="casos.html#distribuidora-alimentos" class="case-link"
+               data-es="Ver caso completo →" data-en="Read full case →">
+              Ver caso completo →
+            </a>
+          </article>
+
+          <!-- Case 2 -->
+          <article class="case-card fade-in" style="transition-delay: 0.1s;">
+            <span class="tag" data-es="Restaurante · Puebla" data-en="Restaurant · Puebla">
+              Restaurante · Puebla
+            </span>
+            <h3 data-es="Reservaciones por teléfono que saturaban al personal"
+                data-en="Phone reservations that overwhelmed staff">
+              Reservaciones por teléfono que saturaban al personal
+            </h3>
+            <p data-es="Restaurante en Puebla implementó un chatbot de WhatsApp con IA para gestionar reservaciones, consultas de menú y promociones especiales de forma completamente autónoma."
+               data-en="Restaurant in Puebla implemented a WhatsApp AI chatbot to manage reservations, menu inquiries and special promotions completely autonomously.">
+              Restaurante en Puebla implementó un chatbot de WhatsApp con IA para gestionar reservaciones, consultas de menú y promociones especiales de forma completamente autónoma.
+            </p>
+            <div>
+              <div class="case-metric">70%</div>
+              <div class="case-metric-label"
+                   data-es="de reservas sin intervención humana"
+                   data-en="of reservations without human intervention">
+                de reservas sin intervención humana
+              </div>
+            </div>
+            <a href="casos.html#restaurante-puebla" class="case-link"
+               data-es="Ver caso completo →" data-en="Read full case →">
+              Ver caso completo →
+            </a>
+          </article>
+
+          <!-- Case 3 -->
+          <article class="case-card fade-in" style="transition-delay: 0.2s;">
+            <span class="tag" data-es="Manufactura · Puebla" data-en="Manufacturing · Puebla">
+              Manufactura · Puebla
+            </span>
+            <h3 data-es="Inventario ocioso que representaba capital inmovilizado"
+                data-en="Idle inventory representing immobilized capital">
+              Inventario ocioso que representaba capital inmovilizado
+            </h3>
+            <p data-es="Taller de manufactura metalmecánica implementó un modelo de Machine Learning para predecir la demanda de materias primas, conectado con sus datos históricos de producción."
+               data-en="Metalworking manufacturing workshop implemented a Machine Learning model to predict raw material demand, connected to their historical production data.">
+              Taller de manufactura metalmecánica implementó un modelo de Machine Learning para predecir la demanda de materias primas, conectado con sus datos históricos de producción.
+            </p>
+            <div>
+              <div class="case-metric">25%</div>
+              <div class="case-metric-label"
+                   data-es="reducción en inventario ocioso"
+                   data-en="reduction in idle inventory">
+                reducción en inventario ocioso
+              </div>
+            </div>
+            <a href="casos.html#manufactura-puebla" class="case-link"
+               data-es="Ver caso completo →" data-en="Read full case →">
+              Ver caso completo →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 05 — PRICING
+    ═══════════════════════════════════════════ -->
+    <section id="precios" aria-label="Precios y planes">
+      <div class="section-inner">
+        <div class="section-header fade-in">
+          <span class="section-eyebrow"
+                data-es="Planes y precios" data-en="Plans &amp; pricing">
+            Planes y precios
+          </span>
+          <h2 data-es="Precios transparentes, sin sorpresas"
+              data-en="Transparent pricing, no surprises">
+            Precios transparentes, sin sorpresas
+          </h2>
+          <p data-es="Sin contratos a largo plazo · Pago por resultados · Garantía de satisfacción"
+             data-en="No long-term contracts · Pay for results · Satisfaction guarantee">
+            Sin contratos a largo plazo · Pago por resultados · Garantía de satisfacción
+          </p>
+        </div>
+
+        <div class="pricing-grid fade-in">
+
+          <!-- Tier 1: Starter -->
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-tier" data-es="STARTER" data-en="STARTER">STARTER</div>
+              <div class="pricing-name" data-es="Diagnóstico de IA" data-en="AI Diagnostic">
+                Diagnóstico de IA
+              </div>
+            </div>
+            <div class="pricing-price">
+              <span class="price-from" data-es="Desde" data-en="From">Desde</span>
+              <span class="price-amount">$4,500</span>
+              <span class="price-period">MXN</span>
+            </div>
+            <ul class="pricing-features" role="list">
+              <li data-es="Sesión de diagnóstico de 2 horas" data-en="2-hour diagnostic session">
+                Sesión de diagnóstico de 2 horas
+              </li>
+              <li data-es="Análisis de tus procesos clave" data-en="Analysis of your key processes">
+                Análisis de tus procesos clave
+              </li>
+              <li data-es="Hoja de ruta de IA personalizada" data-en="Personalized AI roadmap">
+                Hoja de ruta de IA personalizada
+              </li>
+              <li data-es="Grabación de la sesión incluida" data-en="Session recording included">
+                Grabación de la sesión incluida
+              </li>
+              <li data-es="Presupuesto de implementación" data-en="Implementation budget">
+                Presupuesto de implementación
+              </li>
+            </ul>
+            <div class="pricing-cta">
+              <a href="#contacto" class="btn-outline"
+                 data-es="Agendar ahora" data-en="Book now">
+                Agendar ahora
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 2: Project (FEATURED) -->
+          <div class="pricing-card featured">
+            <div class="pricing-badge" data-es="Más popular" data-en="Most popular">
+              Más popular
+            </div>
+            <div>
+              <div class="pricing-tier" data-es="PROYECTO" data-en="PROJECT">PROYECTO</div>
+              <div class="pricing-name" data-es="Implementación puntual" data-en="Targeted implementation">
+                Implementación puntual
+              </div>
+            </div>
+            <div class="pricing-price">
+              <span class="price-from" data-es="Desde" data-en="From">Desde</span>
+              <span class="price-amount">$18,000</span>
+              <span class="price-period">MXN</span>
+            </div>
+            <ul class="pricing-features" role="list">
+              <li data-es="Entrega en 4–8 semanas" data-en="Delivery in 4–8 weeks">
+                Entrega en 4–8 semanas
+              </li>
+              <li data-es="Automatización o modelo de IA" data-en="Automation or AI model">
+                Automatización o modelo de IA
+              </li>
+              <li data-es="Integración con tus sistemas" data-en="Integration with your systems">
+                Integración con tus sistemas
+              </li>
+              <li data-es="Capacitación a tu equipo" data-en="Team training">
+                Capacitación a tu equipo
+              </li>
+              <li data-es="1 mes de soporte post-entrega" data-en="1 month post-delivery support">
+                1 mes de soporte post-entrega
+              </li>
+            </ul>
+            <div class="pricing-cta">
+              <a href="#contacto" class="btn-primary"
+                 data-es="Solicitar cotización" data-en="Request a quote">
+                Solicitar cotización
+              </a>
+            </div>
+          </div>
+
+          <!-- Tier 3: Partner -->
+          <div class="pricing-card">
+            <div>
+              <div class="pricing-tier" data-es="SOCIO" data-en="PARTNER">SOCIO</div>
+              <div class="pricing-name" data-es="Retainer mensual" data-en="Monthly retainer">
+                Retainer mensual
+              </div>
+            </div>
+            <div class="pricing-price">
+              <span class="price-from" data-es="Desde" data-en="From">Desde</span>
+              <span class="price-amount">$8,000</span>
+              <span class="price-period" data-es="MXN/mes" data-en="MXN/mo">MXN/mes</span>
+            </div>
+            <ul class="pricing-features" role="list">
+              <li data-es="Optimización continua de soluciones" data-en="Continuous solution optimization">
+                Optimización continua de soluciones
+              </li>
+              <li data-es="Nuevas automatizaciones cada mes" data-en="New automations each month">
+                Nuevas automatizaciones cada mes
+              </li>
+              <li data-es="Soporte prioritario (respuesta en 4h)" data-en="Priority support (4h response)">
+                Soporte prioritario (respuesta en 4h)
+              </li>
+              <li data-es="Reunión mensual de resultados" data-en="Monthly results meeting">
+                Reunión mensual de resultados
+              </li>
+              <li data-es="Sin permanencia mínima" data-en="No minimum commitment">
+                Sin permanencia mínima
+              </li>
+            </ul>
+            <div class="pricing-cta">
+              <a href="#contacto" class="btn-outline"
+                 data-es="Hablar con nosotros" data-en="Talk to us">
+                Hablar con nosotros
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Trust strip -->
+        <div class="trust-strip fade-in">
+          <span class="trust-item" data-es="Primera consulta gratis" data-en="First consultation free">
+            Primera consulta gratis
+          </span>
+          <span class="trust-item" data-es="Sin permanencia" data-en="No commitment">
+            Sin permanencia
+          </span>
+          <span class="trust-item" data-es="Garantía de satisfacción" data-en="Satisfaction guarantee">
+            Garantía de satisfacción
+          </span>
+          <span class="trust-item" data-es="Respondemos en menos de 24h" data-en="We reply in under 24h">
+            Respondemos en menos de 24h
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 06 — ABOUT
+    ═══════════════════════════════════════════ -->
+    <section id="nosotros" aria-label="Quiénes somos">
+      <div class="about-inner">
+
+        <!-- Left: image placeholder -->
+        <div class="about-image-placeholder fade-in" role="img" aria-label="Foto del equipo PueblAI">
+          <!-- REPLACE: team or office photo in Puebla -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span style="font-size:0.8rem; color: var(--muted);">
+            Foto del equipo — Puebla, Pue.
+          </span>
+        </div>
+
+        <!-- Right: text -->
+        <div class="about-right">
+          <div class="fade-in">
+            <span class="section-eyebrow"
+                  data-es="Quiénes somos" data-en="Who we are">
+              Quiénes somos
+            </span>
+            <h2 data-es="Experiencia Fortune 500 al servicio de las PyMEs de México"
+                data-en="Fortune 500 expertise serving México's SMBs">
+              Experiencia Fortune 500 al servicio de las PyMEs de México
+            </h2>
+          </div>
+
+          <p class="fade-in" style="transition-delay:0.1s;"
+             data-es="Somos un equipo de ingenieros y científicos de datos formados en Amazon y Microsoft con más de 10 años construyendo sistemas de IA a escala global. Vimos de primera mano cómo la tecnología transforma operaciones enteras —y también cómo esa tecnología estaba fuera del alcance de las pequeñas empresas."
+             data-en="We are a team of engineers and data scientists trained at Amazon and Microsoft with 10+ years building AI systems at global scale. We saw firsthand how technology transforms entire operations — and also how that technology was out of reach for small businesses.">
+            Somos un equipo de ingenieros y científicos de datos formados en Amazon y Microsoft con más de 10 años construyendo sistemas de IA a escala global. Vimos de primera mano cómo la tecnología transforma operaciones enteras —y también cómo esa tecnología estaba fuera del alcance de las pequeñas empresas.
+          </p>
+
+          <p class="fade-in" style="transition-delay:0.15s;"
+             data-es="Regresamos a Puebla con una misión clara: hacer que esa misma tecnología sea asequible y accesible para los empresarios de nuestra ciudad. Conocemos la industria manufacturera, textil, de alimentos y distribución que impulsa la economía poblana. Sabemos cómo funciona CONTPAQi, Aspel y los sistemas que ya tienes."
+             data-en="We returned to Puebla with a clear mission: to make that same technology affordable and accessible for business owners in our city. We know the manufacturing, textile, food and distribution industries that drive Puebla's economy. We know how CONTPAQi, Aspel and the systems you already use work.">
+            Regresamos a Puebla con una misión clara: hacer que esa misma tecnología sea asequible y accesible para los empresarios de nuestra ciudad. Conocemos la industria manufacturera, textil, de alimentos y distribución que impulsa la economía poblana. Sabemos cómo funciona CONTPAQi, Aspel y los sistemas que ya tienes.
+          </p>
+
+          <!-- Team cards -->
+          <div class="team-grid fade-in" style="transition-delay:0.2s;">
+
+            <div class="team-card">
+              <!-- REPLACE: team member photo -->
+              <div class="team-avatar" aria-label="Foto de perfil">MR</div>
+              <h4>Miguel Ríos</h4>
+              <span class="team-title">CEO &amp; Co-fundador</span>
+              <p class="team-bio"
+                 data-es="8 años en Amazon AWS liderando sistemas de ML en producción."
+                 data-en="8 years at Amazon AWS leading production ML systems.">
+                8 años en Amazon AWS liderando sistemas de ML en producción.
+              </p>
+              <a href="#" class="team-linkedin" aria-label="LinkedIn de Miguel Ríos">
+                <!-- LinkedIn icon -->
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+
+            <div class="team-card">
+              <!-- REPLACE: team member photo -->
+              <div class="team-avatar" aria-label="Foto de perfil">AV</div>
+              <h4>Ana Vargas</h4>
+              <span class="team-title">CTO &amp; Co-fundadora</span>
+              <p class="team-bio"
+                 data-es="6 años en Microsoft Azure diseñando arquitecturas de datos."
+                 data-en="6 years at Microsoft Azure designing data architectures.">
+                6 años en Microsoft Azure diseñando arquitecturas de datos.
+              </p>
+              <a href="#" class="team-linkedin" aria-label="LinkedIn de Ana Vargas">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+
+            <div class="team-card">
+              <!-- REPLACE: team member photo -->
+              <div class="team-avatar" aria-label="Foto de perfil">LC</div>
+              <h4>Luis Castillo</h4>
+              <span class="team-title">Lead Engineer</span>
+              <p class="team-bio"
+                 data-es="Egresado de la BUAP. Especialista en integraciones y APIs."
+                 data-en="BUAP graduate. Specialist in integrations and APIs.">
+                Egresado de la BUAP. Especialista en integraciones y APIs.
+              </p>
+              <a href="#" class="team-linkedin" aria-label="LinkedIn de Luis Castillo">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mission statement -->
+      <div class="mission-block fade-in">
+        <blockquote data-es="Llevamos tecnología de clase mundial a las PyMEs de México"
+                    data-en="We bring world-class technology to Mexico's SMBs">
+          Llevamos tecnología de clase mundial a las PyMEs de México
+        </blockquote>
+      </div>
+
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 07 — CONTACT
+    ═══════════════════════════════════════════ -->
+    <section id="contacto" aria-label="Contacto">
+      <div class="contact-inner">
+
+        <!-- Left: form -->
+        <div>
+          <div class="contact-header fade-in">
+            <span class="section-eyebrow"
+                  data-es="Hablemos" data-en="Let's talk">
+              Hablemos
+            </span>
+            <h2 data-es="¿Listo para transformar tu negocio?"
+                data-en="Ready to transform your business?">
+              ¿Listo para transformar tu negocio?
+            </h2>
+            <p data-es="Primera consulta gratuita. Sin compromisos. Respondemos en menos de 24 horas."
+               data-en="First consultation free. No commitments. We reply within 24 hours.">
+              Primera consulta gratuita. Sin compromisos. Respondemos en menos de 24 horas.
+            </p>
+          </div>
+
+          <form class="contact-form fade-in" style="transition-delay:0.1s;"
+                name="contact"
+                action="#"
+                method="POST"
+                novalidate
+                aria-label="Formulario de contacto">
+
+            <!-- REPLACE: add action="https://formspree.io/f/YOUR_ID" or netlify attribute -->
+
+            <div class="form-group">
+              <label for="nombre" data-es="Tu nombre" data-en="Your name">Tu nombre</label>
+              <input type="text" id="nombre" name="nombre"
+                     placeholder="María González"
+                     required
+                     autocomplete="name" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email"
+                     placeholder="maria@tuempresa.com"
+                     required
+                     autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="empresa"
+                     data-es="Empresa (opcional)" data-en="Company (optional)">
+                Empresa (opcional)
+              </label>
+              <input type="text" id="empresa" name="empresa"
+                     placeholder="Distribuidora Hernández"
+                     autocomplete="organization" />
+            </div>
+
+            <div class="form-group">
+              <label for="servicio"
+                     data-es="¿En qué necesitas ayuda?" data-en="How can we help?">
+                ¿En qué necesitas ayuda?
+              </label>
+              <select id="servicio" name="servicio">
+                <option value="" data-es="Selecciona un servicio" data-en="Select a service">
+                  Selecciona un servicio
+                </option>
+                <option value="automatizacion"
+                        data-es="Automatización de procesos"
+                        data-en="Process automation">
+                  Automatización de procesos
+                </option>
+                <option value="analitica"
+                        data-es="Análisis de datos e IA predictiva"
+                        data-en="Data analytics &amp; predictive AI">
+                  Análisis de datos e IA predictiva
+                </option>
+                <option value="chatbot"
+                        data-es="Chatbot / Atención al cliente"
+                        data-en="Chatbot / Customer service">
+                  Chatbot / Atención al cliente
+                </option>
+                <option value="consultoria"
+                        data-es="Consultoría estratégica de IA"
+                        data-en="Strategic AI consulting">
+                  Consultoría estratégica de IA
+                </option>
+                <option value="integraciones"
+                        data-es="Integraciones y APIs"
+                        data-en="Integrations &amp; APIs">
+                  Integraciones y APIs
+                </option>
+                <option value="no-se"
+                        data-es="No sé por dónde empezar"
+                        data-en="Not sure where to start">
+                  No sé por dónde empezar
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje"
+                     data-es="Cuéntanos tu reto" data-en="Tell us about your challenge">
+                Cuéntanos tu reto
+              </label>
+              <textarea id="mensaje" name="mensaje"
+                        rows="4"
+                        placeholder="Describe brevemente el proceso o problema que quieres resolver con IA…"></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn-primary"
+                      data-es="Enviar mensaje" data-en="Send message">
+                Enviar mensaje
+              </button>
+            </div>
+
+            <div class="form-success" role="alert"
+                 data-es="¡Mensaje enviado! Te contactaremos en menos de 24 horas."
+                 data-en="Message sent! We'll contact you within 24 hours.">
+              ¡Mensaje enviado! Te contactaremos en menos de 24 horas.
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Right: alternative contact -->
+        <div class="alt-contact fade-in" style="transition-delay:0.2s;">
+
+          <a href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20me%20interesa%20una%20consulta%20gratuita%20de%20IA%20para%20mi%20negocio."
+             class="wa-cta"
+             target="_blank"
+             rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            <span data-es="Escríbenos por WhatsApp" data-en="Message us on WhatsApp">
+              Escríbenos por WhatsApp
+            </span>
+          </a>
+
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div>
+              <span style="font-size:0.78rem; color:var(--muted); display:block; margin-bottom:0.2rem;"
+                    data-es="Correo electrónico" data-en="Email">
+                Correo electrónico
+              </span>
+              <a href="mailto:hola@pueblai.mx">hola@pueblai.mx</a>
+              <!-- REPLACE: actual email address -->
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <svg viewBox="0 0 24 24" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <span style="font-size:0.78rem; color:var(--muted); display:block; margin-bottom:0.2rem;"
+                    data-es="Ubicación" data-en="Location">
+                Ubicación
+              </span>
+              <span style="color:var(--ink); font-weight:500;">Puebla, Pue., México</span>
+            </div>
+          </div>
+
+          <!-- Calendly embed placeholder -->
+          <div class="calendly-placeholder" id="calendly-embed">
+            <svg viewBox="0 0 24 24" width="32" height="32" stroke="var(--muted)" fill="none" stroke-width="1.5" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <p data-es="Agenda directamente en nuestro calendario" data-en="Book directly in our calendar">
+              Agenda directamente en nuestro calendario
+            </p>
+            <a href="#" class="btn-outline" style="font-size:0.88rem;"
+               data-es="Abrir Calendly" data-en="Open Calendly">
+              Abrir Calendly
+            </a>
+            <!-- REPLACE: embed Calendly widget script here -->
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" style="font-size:1.3rem;">
+            Puebl<span>AI</span>
+          </a>
+          <p data-es="Inteligencia Artificial asequible para las PyMEs de Puebla y México. Experiencia Amazon y Microsoft a tu servicio."
+             data-en="Affordable Artificial Intelligence for SMBs in Puebla and México. Amazon and Microsoft expertise at your service.">
+            Inteligencia Artificial asequible para las PyMEs de Puebla y México. Experiencia Amazon y Microsoft a tu servicio.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h5 data-es="Navegación" data-en="Navigation">Navegación</h5>
+          <ul role="list">
+            <li><a href="#servicios" data-es="Servicios" data-en="Services">Servicios</a></li>
+            <li><a href="#casos"     data-es="Casos de éxito" data-en="Case studies">Casos de éxito</a></li>
+            <li><a href="#precios"   data-es="Precios" data-en="Pricing">Precios</a></li>
+            <li><a href="#nosotros"  data-es="Nosotros" data-en="About us">Nosotros</a></li>
+            <li><a href="#contacto"  data-es="Contacto" data-en="Contact">Contacto</a></li>
+            <li><a href="casos.html"    data-es="Todos los casos" data-en="All cases">Todos los casos</a></li>
+            <li><a href="servicios.html" data-es="Todos los servicios" data-en="All services">Todos los servicios</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-social">
+          <h5 data-es="Contacto" data-en="Contact">Contacto</h5>
+          <ul role="list">
+            <li>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/52XXXXXXXXXX" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hola@pueblai.mx" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6" fill="none" stroke="var(--bg)" stroke-width="1.5"/></svg>
+                hola@pueblai.mx
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-legal">
+          Puebla, Pue., México &nbsp;·&nbsp;
+          RFC: XXXXXXXXXX &nbsp;·&nbsp;
+          &copy; 2025 PueblAI &nbsp;·&nbsp;
+          <span data-es="Todos los derechos reservados" data-en="All rights reserved">
+            Todos los derechos reservados
+          </span>
+        </p>
+        <span class="tag" style="font-size:0.68rem;"
+              data-es="Hecho con ❤ en Puebla" data-en="Made with ❤ in Puebla">
+          Hecho con ❤ en Puebla
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
