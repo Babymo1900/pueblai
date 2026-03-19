@@ -190,26 +190,39 @@
         return;
       }
 
-      // Simulate async submit (replace with actual form submission logic)
       const btn = contactForm.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
       btn.disabled = true;
       btn.textContent = currentLang === 'es' ? 'Enviando…' : 'Sending…';
 
-      // Replace this setTimeout with your actual fetch() / FormSpree / Netlify submit
-      setTimeout(() => {
+      fetch('https://formspree.io/f/mpqybaeb', {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(res => {
         btn.disabled = false;
         btn.textContent = originalText;
-        contactForm.reset();
-
-        if (formSuccess) {
-          formSuccess.classList.add('visible');
-          formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-          // Hide after 6 seconds
-          setTimeout(() => formSuccess.classList.remove('visible'), 6000);
+        if (res.ok) {
+          contactForm.reset();
+          if (formSuccess) {
+            formSuccess.classList.add('visible');
+            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            setTimeout(() => formSuccess.classList.remove('visible'), 6000);
+          }
+        } else {
+          alert(currentLang === 'es'
+            ? 'Hubo un error al enviar. Escríbenos a iaenpuebla@gmail.com'
+            : 'There was an error. Please email us at iaenpuebla@gmail.com');
         }
-      }, 800);
+      })
+      .catch(() => {
+        btn.disabled = false;
+        btn.textContent = originalText;
+        alert(currentLang === 'es'
+          ? 'Sin conexión. Escríbenos a iaenpuebla@gmail.com'
+          : 'No connection. Please email us at iaenpuebla@gmail.com');
+      });
     });
 
     // Remove error state on input
