@@ -1214,7 +1214,7 @@ p {
 
 /* Image placeholder */
 .about-image-placeholder {
-  aspect-ratio: 4 / 5;
+  min-height: 320px;
   background: var(--border);
   border-radius: var(--radius-lg);
   display: flex;
