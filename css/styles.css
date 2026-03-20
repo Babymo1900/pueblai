@@ -771,6 +771,16 @@ p {
   color: var(--ink);
 }
 
+.company-logo-svg {
+  color: var(--muted);
+  opacity: 0.7;
+  transition: opacity var(--transition);
+}
+
+.company-logo-svg:hover {
+  opacity: 1;
+}
+
 .trust-caption {
   font-size: 0.88rem;
   color: var(--muted);
@@ -1199,7 +1209,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5rem;
-  align-items: center;
+  align-items: start;
 }
 
 /* Image placeholder */
