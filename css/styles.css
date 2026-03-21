@@ -781,6 +781,16 @@ p {
   opacity: 1;
 }
 
+.company-logo-wordmark {
+  color: var(--muted);
+  opacity: 0.75;
+  transition: opacity var(--transition);
+}
+
+.company-logo-wordmark:hover {
+  opacity: 1;
+}
+
 .trust-caption {
   font-size: 0.88rem;
   color: var(--muted);
@@ -1208,36 +1218,26 @@ p {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 4rem;
   align-items: start;
 }
 
-/* Image placeholder */
-.about-image-placeholder {
-  min-height: 320px;
-  background: var(--border);
-  border-radius: var(--radius-lg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  color: var(--muted);
-  font-size: 0.85rem;
-  /* REPLACE: team or office photo */
-}
-
-.about-image-placeholder svg {
-  width: 48px;
-  height: 48px;
-  stroke: var(--muted);
-  fill: none;
-}
-
-.about-right {
+.about-left {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+.about-left p {
+  font-size: 1rem;
+  max-width: none;
+}
+
+/* Right column: stacked team cards */
+.about-right-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .about-right p {
@@ -1832,10 +1832,6 @@ p {
   .about-inner {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-
-  .about-image-placeholder {
-    aspect-ratio: 16 / 7;
   }
 
   .contact-inner {
