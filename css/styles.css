@@ -771,24 +771,15 @@ p {
   color: var(--ink);
 }
 
-.company-logo-svg {
-  color: var(--muted);
-  opacity: 0.7;
-  transition: opacity var(--transition);
+.company-logo-img {
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: opacity var(--transition), filter var(--transition);
 }
 
-.company-logo-svg:hover {
+.company-logo-img:hover {
   opacity: 1;
-}
-
-.company-logo-wordmark {
-  color: var(--muted);
-  opacity: 0.75;
-  transition: opacity var(--transition);
-}
-
-.company-logo-wordmark:hover {
-  opacity: 1;
+  filter: grayscale(0%);
 }
 
 .trust-caption {
@@ -1231,6 +1222,27 @@ p {
 .about-left p {
   font-size: 1rem;
   max-width: none;
+}
+
+.about-photo-placeholder {
+  aspect-ratio: 16 / 9;
+  background: var(--border);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.about-photo-placeholder svg {
+  width: 40px;
+  height: 40px;
+  stroke: var(--muted);
+  fill: none;
 }
 
 /* Right column: 2x2 team cards grid */
@@ -1832,6 +1844,10 @@ p {
   .about-inner {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  .about-right-cards {
+    grid-template-columns: 1fr 1fr;
   }
 
   .contact-inner {
