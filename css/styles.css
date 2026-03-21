@@ -1233,10 +1233,10 @@ p {
   max-width: none;
 }
 
-/* Right column: stacked team cards */
+/* Right column: 2x2 team cards grid */
 .about-right-cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1.25rem;
 }
 
