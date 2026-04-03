@@ -926,6 +926,85 @@ p {
 }
 
 /* ============================================================
+   9b. CÓMO FUNCIONA (#como-funciona)
+   ============================================================ */
+#como-funciona {
+  padding: var(--section-pad);
+  background: var(--tag-bg);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.step-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.75rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.step-card h3 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.step-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+}
+
+.steps-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* Calendly popup button */
+.calendly-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.9rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background var(--transition);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.calendly-cta:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+/* ============================================================
    10. CASE STUDIES (#casos)
    ============================================================ */
 #casos {
@@ -1907,6 +1986,10 @@ p {
   }
 
   .cases-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps-grid {
     grid-template-columns: 1fr;
   }
 
